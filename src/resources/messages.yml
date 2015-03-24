@@ -1,0 +1,4 @@
+configversion: 1.0
+messages:
+    general:
+        prefix: '&6[Duels]&a'

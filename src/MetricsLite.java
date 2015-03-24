@@ -1,4 +1,4 @@
-package io.rubegamer.duel;
+package io.rubegamer.duelme;
 
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.InvalidConfigurationException;
