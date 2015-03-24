@@ -1,0 +1,18 @@
+configversion: 1.0
+duelme:
+    duel:
+       countdowntime: 30
+       dueltime: 120
+       dropitemsondeath: false
+       minbetamount: 500
+    announce:
+       duelstart: true
+       deaths: true
+       leavejoin: true
+    commands:
+       duelstart:
+          - 'kit 1v1'
+       duelwinner:
+          - 'kit winner'
+    debug:
+       enabled: false
