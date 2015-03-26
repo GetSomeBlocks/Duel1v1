@@ -29,7 +29,7 @@ public class AddDeathCmd extends DuelAdminCmd {
 
         if (args.length == 1) {
             if (!fm.isMySqlEnabled()) {
-                Util.sendMsg(sender, ChatColor.RED + "MySql is NOT enabled you cannot use this command.");
+                Util.sendMsg(sender, ChatColor.RED + "Necesitas tener una base de datos activada.");
                 return;
             }
             String playerNameIn = args[0];
@@ -38,10 +38,10 @@ public class AddDeathCmd extends DuelAdminCmd {
 
             if (player != null) {
                 String playerName = player.getName();
-                Util.sendMsg(sender, "Adding death for player: " + ChatColor.AQUA + playerName);
+                Util.sendMsg(sender, "Muerte añadida a: " + ChatColor.AQUA + playerName);
                 mySql.addPlayerKillDeath(playerUUID, playerName, FieldName.DEATH);
             } else {
-                Util.sendMsg(sender, ChatColor.RED + "Player " + playerNameIn + " is not online, did you type the name correctly?");
+                Util.sendMsg(sender, ChatColor.RED + "El jugador " + playerNameIn + " no esta conectado?");
             }
         }
     }
